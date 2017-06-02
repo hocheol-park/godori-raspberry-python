@@ -47,7 +47,7 @@ win = ""
 
 local = 'Suwon'
 # weather url 
-url_weather = 'http://api.openweathermap.org/data/2.5/weather?q='+local+'&mode=json&APPID=5e212d73632d4e0b16fcddb0bc772978'
+url_weather = 'http://api.openweathermap.org/data/2.5/weather?q='+local+'&mode=json&APPID='
 u1 = urllib.urlopen(url_weather)
 weather= json.loads(u1.read())
 
@@ -611,8 +611,8 @@ class MyWindow(Gtk.Window, threading.Thread):
 def upload_to_s3(callback=None, md5=None, reduced_redundancy=False, content_type=None):
 	global file
 
-	aws_access_key_id = 'AKIAJ37RQ65RC5XNSC6Q'
-	aws_secret_access_key = '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'
+	aws_access_key_id = ''
+	aws_secret_access_key = ''
 	bucket = 'godori-image'
 	key = 'origin/'+file.name
 
