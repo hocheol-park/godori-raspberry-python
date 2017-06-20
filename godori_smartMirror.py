@@ -65,8 +65,8 @@ url_video_category = 'https://4n54wpk7kd.execute-api.us-east-1.amazonaws.com/dev
 u2 = urllib.urlopen(url_video_category)
 video = json.loads(u2.read())
 
-aws_access_key_id = 'AKIAI35UA2KVQVDN2VBQ'
-aws_secret_access_key = '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'
+aws_access_key_id = ''
+aws_secret_access_key = ''
 
 
 shape = ""
